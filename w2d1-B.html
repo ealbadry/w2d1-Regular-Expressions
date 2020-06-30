@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="Style.css">
+
+</head>
+<body>
+
+<div id="navbar">
+  <a class="active" href="javascript:void(0)">Home</a>
+  <a href="javascript:void(0)">News</a>
+  <a href="javascript:void(0)">Contact</a>
+  
+  <a>     </a>
+  <a>     </a>
+  <a>     </a>
+  <label >Hello!</label>
+  <button>Sign Out</button>
+</div>
+
+<div class="content">
+  <h3>New Product Form</h3>
+  
+ <form action="">
+  <label for="product">Product Number:</label><br>
+  <input type="text" id="product" name="product"><br>
+  <label for="name">Name:</label><br>
+  <input type="text" id="name" name="name" ><br>
+  
+   <label for="unit">Unit Price:</label><br>
+  <input type="text" id="unit" name="unit"><br>
+  
+  <input type="submit" value="Add Product">
+  <input type="reset" value="Cancel">
+  <input type="reset" value="Reset">
+</form> 
+  
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>
